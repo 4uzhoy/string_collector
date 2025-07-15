@@ -4,12 +4,14 @@ import 'package:path/path.dart' as p;
 import 'package:string_collector/collector.dart';
 import 'package:string_collector/config_loader.dart';
 
+
+
 Future<void> main(List<String> args) async {
   stdout.writeln('Starting string collection...');
+  
+  final binDir = File(Platform.script.toFilePath()).parent;
 
-  final scriptDir = File(Platform.script.toFilePath()).parent;
-
-  final defaultConfigFile = File(p.join(scriptDir.path, 'default_config.yaml'));
+  final defaultConfigFile = File(p.join(binDir.path, 'default_config.yaml'));
 
   final pathConfig = _parseArgs(args);
   File? configFile;
