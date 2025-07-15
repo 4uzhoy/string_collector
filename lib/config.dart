@@ -4,7 +4,6 @@ import 'package:yaml/yaml.dart';
 /// {@template collector_config}
 /// Configuration for the string collector utility.
 /// {@endtemplate}
-@internal
 @immutable
 final class CollectorConfig {
   /// Creates a new [CollectorConfig] instance.

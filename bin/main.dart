@@ -1,8 +1,8 @@
 import 'dart:io';
 
 import 'package:path/path.dart' as p;
-import 'package:string_collector/src/collector.dart';
-import 'package:string_collector/src/config_loader.dart';
+import 'package:string_collector/collector.dart';
+import 'package:string_collector/config_loader.dart';
 
 Future<void> main(List<String> args) async {
   stdout.writeln('Starting string collection...');

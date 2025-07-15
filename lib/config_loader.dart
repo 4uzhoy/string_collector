@@ -1,4 +1,4 @@
-import 'package:string_collector/src/config.dart';
+import 'package:string_collector/config.dart';
 import 'package:yaml/yaml.dart';
 
 /// {@template config_loader}

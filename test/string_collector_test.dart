@@ -1,4 +1,4 @@
-import 'package:string_collector/src/config_loader.dart';
+import 'package:string_collector/config_loader.dart';
 import 'package:test/test.dart';
 
 void main() {

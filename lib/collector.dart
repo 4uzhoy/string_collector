@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:path/path.dart' as p;
-import 'package:string_collector/src/config.dart';
+import 'package:string_collector/config.dart';
 
 /// {@template string_collector}
 /// Core utility to extract localizable strings from Dart files.

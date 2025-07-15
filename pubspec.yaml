@@ -6,7 +6,7 @@ issue_tracker: https://github.com/4uzhoy/string_collector/issues
 homepage: https://github.com/4uzhoy/string_collector
 topics: cli, strings, localization, dart, flutter
 executables:
-  string_collector: bin/main.dart
+  string_collector: main.dart
 
 environment:
   sdk: ">=3.2.0 <4.0.0"
