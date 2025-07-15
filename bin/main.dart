@@ -6,9 +6,10 @@ import 'package:string_collector/config_loader.dart';
 
 Future<void> main(List<String> args) async {
   stdout.writeln('Starting string collection...');
+
   final scriptDir = File(Platform.script.toFilePath()).parent;
-  final rootDir = scriptDir.parent;
-  final deafultConfigFile = File(p.join(rootDir.path, 'default_config.yaml'));
+
+  final defaultConfigFile = File(p.join(scriptDir.path, 'default_config.yaml'));
 
   final pathConfig = _parseArgs(args);
   File? configFile;
@@ -22,10 +23,10 @@ Future<void> main(List<String> args) async {
       stdout.writeln('Using custom config file: ${configFile.path}');
     }
   }
-  final rawDefaultConfig = deafultConfigFile.readAsStringSync();
+  final rawDefaultConfig = defaultConfigFile.readAsStringSync();
 
   final rawConfig =
-      File(pathConfig ?? deafultConfigFile.path).readAsStringSync();
+      File(pathConfig ?? defaultConfigFile.path).readAsStringSync();
 
   final config = ConfigLoader.load(rawConfig, rawDefaultConfig);
 

@@ -1,5 +1,5 @@
 name: string_collector
-version: 0.0.1
+version: 1.0.0
 description: A simple CLI tool to scan Dart source files and collect string literals into structured JSON files.
 repository: https://github.com/4uzhoy/string_collector
 issue_tracker: https://github.com/4uzhoy/string_collector/issues
