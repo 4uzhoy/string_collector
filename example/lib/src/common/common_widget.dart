@@ -1,0 +1,1 @@
+const str = 'This is a string should be collected.';

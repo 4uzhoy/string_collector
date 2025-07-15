@@ -1,0 +1,6 @@
+[
+  {
+    "line": "screens/example_screen.dart:3",
+    "src": "'string that should be collected.'"
+  }
+]

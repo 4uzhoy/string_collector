@@ -1,0 +1,23 @@
+input_root: example_2/lib # Input directory for source files
+output_root: example_2/strings # Output directory for collected strings
+preserve_path_from: example_2 # Directory to preserve path structure from
+patterns: # settings for string detection and filtering files
+  exclude_paths:
+    - "repository" # Paths repository directories
+    - "debug" # Exclude debug directories
+    - "test" # Exclude test directories
+    - "mock" # Exclude mock directories
+    - "l10n" # Exclude localization directories
+    - "developer" # Exclude developer directories
+  exclude_lines:
+    - "///" # Exclude single-line comments with triple slashes
+    - "\/\/" # Exclude single-line comments with double slashes
+    - "logger\\.(i|d|e|w|v|wtf)" # Exclude logger calls
+    - "log\\.(i|d|e|w|v|wtf)" # Exclude log calls
+    - "l\\.(i|d|e|w|v|wtf)" # Exclude shorthand log calls
+    - "\\.\\.(i|d|e|w|v|wtf)" # Exclude shorthand logger calls with cascade operator
+    - "assert" # Exclude assert statements
+    - "RegExp\\(" # Exclude RegExp instantiations
+    - "^\\^" # Exclude lines starting with caret (^) which may indicate special syntax
+  string_regex: "(?:'''[\\s\\S]*?'''|\"\"\"[\\s\\S]*?\"\"\"|'(?:[^\\\\'\\n]|\\\\.)*?'|\"(?:[^\\\\\"\\n]|\\\\.)*?\")"
+  # Regex to match translatable strings, including single and multi-line strings

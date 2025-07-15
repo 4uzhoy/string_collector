@@ -1,0 +1,34 @@
+[
+  {
+    "line": "widgets/example_widget.dart:3",
+    "src": "'This is a string should be collected.'"
+  },
+  {
+    "line": "widgets/example_widget.dart:4",
+    "src": "'This is another string should be collected.'"
+  },
+  {
+    "line": "widgets/example_widget.dart:5",
+    "src": "\"This is a third string should be collected.\""
+  },
+  {
+    "line": "widgets/example_widget.dart:7",
+    "src": "\"This is a fourth string with a special character: \\u{1F600} should be collected.\""
+  },
+  {
+    "line": "widgets/example_widget.dart:9",
+    "src": "'''this is a multiline string with one line should be collected.'''"
+  },
+  {
+    "line": "widgets/example_widget.dart:14",
+    "src": "'This is an example string that should be collected.'"
+  },
+  {
+    "line": "widgets/example_widget.dart:16",
+    "src": "'but this should be collected'"
+  },
+  {
+    "line": "widgets/example_widget.dart:18",
+    "src": "'ExampleWidget is not implemented yet. Example: $example'"
+  }
+]
